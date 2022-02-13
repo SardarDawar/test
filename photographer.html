@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/photographer.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>Fisheye - photographer </title>
+  </head>
+  
+  <body>
+    <header>
+      <a href="index.html"><img src="assets/images/logo.png" class="logo" /></a>
+    </header>
+    <main id="main">
+      
+      <div class="photograph-header">
+        <div class="info"></div>
+        <button class="contact_button" onclick="displayModal()"><pre>Contact Me</pre></button>
+      <div class="photo_section"></div>
+    </div>
+    </main>
+    <div class="drop-dowm-menu">
+      <div class="order">
+        Order By</div>
+      <div class="menu">
+        <div class="menu-title">
+          Popularity<i class="fas fa-angle-up icon1"></i><i class="fas fa-angle-down icon4"></i>
+        </div>
+        <div class="sub-menu">
+          <ul>
+            <li>
+              <a href="#"><span class="date">Date</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="title">Title</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="photograph_section grid">
+      <div id="lightbox"></div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+         </div>
+         </div>
+    </div>
+
+    <div class="video_section"></div>
+    <div id="contact_modal">
+			<div class="modal">
+				<header>
+          <h2>Contact me</h2>
+          <img src="assets/icons/close.svg" onclick="closeModal()" />
+        </header>
+				<form>
+					<div>
+						<label>First name</label>
+						<input />
+					</div>
+          <button class="contact_button">Send</button>
+				</form>
+			</div>
+		</div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="scripts/factories/photographs.js"></script>
+    <script src="scripts/factories/photo.js"></script>
+    <script src="scripts/factories/media.js"></script>
+    <script src="scripts/pages/photographer.js"></script>
+    <script src="scripts/pages/gallery.js"></script>
+    <script src="/scripts/utils/contactForm.js"></script>
+
+   
+  </body>
+</html>
